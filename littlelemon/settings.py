@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party apps
+    'rest_framework',
 
     # my apps
     'restaurant',
@@ -83,17 +84,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    'secondary': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'littlelemon',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'admin',
-        'PASSWORD': '',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
-    },
+    # 'secondary': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'littlelemon',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    #     'USER': 'admin',
+    #     'PASSWORD': '',
+    #     'OPTIONS': {
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    #     },
+    # },
 }
 
 
